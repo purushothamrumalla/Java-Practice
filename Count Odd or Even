@@ -1,0 +1,42 @@
+Count Odd or Even
+Write a program to count the number of even and odd elements in an array:
+
+Sample Input:
+3
+1
+2
+3
+
+Sample Output:
+Odd: 2
+Even: 1
+
+CODE:
+import java.util.Scanner;
+public class Count
+{
+    public static void main(String[] args)
+    {Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int a[]=new int[n];
+    int c=0;
+    int c1=0;
+    for(int i=0;i<n;i++)
+    {
+      a[i]=sc.nextInt();  
+    }
+    for(int i=0;i<n;i++)
+    if(a[i]%2==0)
+    {
+        c=c+1;
+    }
+    else
+    {
+        c1=c1+1;
+    }
+    System.out.println("Odd: "+c1);
+    System.out.println("Even: "+c);
+    
+        //Write your code
+    }
+}
