@@ -1,0 +1,38 @@
+Series II
+Write a program to generate the following series --- 6,11,21,36,56,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input:
+
+5
+
+Sample Output:
+
+6 11 21 36 56 
+CODE:
+import java.util.Scanner;
+public class Series2
+{
+    public static void main(String[] args)
+    {Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int res=6;
+    int add=5;
+    System.out.print(res);
+    for(int i=1;i<n;++i)
+     {   res+=add;
+     
+     System.out.print(" "+res);
+     add+=5;
+        //Write your code
+     }
+        
+    }
+}
