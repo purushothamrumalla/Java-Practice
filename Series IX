@@ -1,0 +1,33 @@
+Series IX
+Write a program to generate the following series 2, 3, 8, 63, 3968
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+
+5
+
+2 3 8 63 3968
+CODE:
+import java.util.Scanner;
+public class Series9
+{
+    public static void main(String[] args)
+    {Scanner sc=new Scanner(System.in);
+     int n=sc.nextInt();
+     long a=2;
+     System.out.print("2");
+     for(int i=2;i<=(n);i++)
+      {a=(long)Math.pow(a,2);
+       a=a-1;
+       System.out.print(" "+a);
+      }
+    
+    }
+}
