@@ -1,0 +1,18 @@
+Write a program using ArrayList to print the follwoing output:
+ArrayList: [Java, Kotlin, C++]
+Modified ArrayList: [Java, Kotlin, JavaScript]
+Code:
+import java.util.*;
+class Array3
+{
+    public static void main(String args[])
+    {
+        ArrayList <String> al=new ArrayList <String>();
+        al.add("Java");
+        al.add("Kotlin");
+        al.add("C++");
+        System.out.println("ArrayList: "+al);
+        al.set(2,"JavaScript");
+        System.out.print("Modified ArrayList: "+al);
+    }
+}
